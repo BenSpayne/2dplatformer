@@ -226,7 +226,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4.315
+  orthographic size: 7.25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -912,9 +912,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1871405086}
   - {fileID: 616361412}
   - {fileID: 1498368178}
+  - {fileID: 1871405086}
   - {fileID: 1152716401}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -943,7 +943,7 @@ Transform:
   m_GameObject: {fileID: 1084464731}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.51, z: 0}
+  m_LocalPosition: {x: 0, y: -0.522, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16134,12 +16134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 10
-  rb: {fileID: 1489055306}
-  groundCheck: {fileID: 1084464732}
   groundCheckRadius: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 9
 --- !u!50 &1489055306
 Rigidbody2D:
   serializedVersion: 5
@@ -16155,7 +16150,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 15
+  m_GravityScale: 3.5
   m_Material: {fileID: 6200000, guid: 5a6215fde8241e442b9f70c0f74d2146, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -16165,7 +16160,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &1489055307
 BoxCollider2D:
@@ -23091,7 +23086,7 @@ GameObject:
   - component: {fileID: 1871405088}
   - component: {fileID: 1871405087}
   - component: {fileID: 1871405089}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
